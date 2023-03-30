@@ -9,7 +9,7 @@ $ python -m manage.py runserver 127.0.0.1:8200
 
 # IT WORKS !!! ( opened port on browser - native = same as codespace start - )
 # the link gh codespace gives to it (did you see the space rocket !!!)
-https://rdanf1-psychic-memory-6xwqjv7wwq5h9rg-8200.preview.app.github.dev/
+https://rdanf1-psychic-memory-6xwqjv7wq5h9rg-8200.preview.app.github.dev/
 
 # other wise, with ssh X forwarded and good chrome package installed :
 # Cf : ../tmp/google-chrome-stable_current_amd64.deb
