@@ -39,3 +39,6 @@ p /home/codespace/.python/current_MS_shit/bin/python venv3.10.4/bin/python
 
 # Putting ../sh/ssh-agent.sh commands directly in ~/.bashrc
 # => ok push manually from new Terminal
+
+# All perfect but ( I knew IT ! )
+[30/Mar/2023 14:32:26] "GET /favicon.ico HTTP/1.1" 404 2110
