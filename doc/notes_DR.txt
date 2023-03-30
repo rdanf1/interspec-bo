@@ -36,3 +36,6 @@ p /home/codespace/.python/current_MS_shit/bin/python venv3.10.4/bin/python
 # THOUGH : IT WORKS IN DEBUG MODE !!!
 # NB : json file is obscure : 
 #      cant figure it out for modifying so called ${file}...
+
+# Putting ../sh/ssh-agent.sh commands directly in ~/.bashrc
+# => ok push manually from new Terminal
