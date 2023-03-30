@@ -42,3 +42,8 @@ p /home/codespace/.python/current_MS_shit/bin/python venv3.10.4/bin/python
 
 # All perfect but ( I knew IT ! )
 [30/Mar/2023 14:32:26] "GET /favicon.ico HTTP/1.1" 404 2110
+
+
+dq ça plante (port 8000 plus effectif)... 
+Le retour json :
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.4","title":"Not Found","status":404,"traceId":"00-d491e60ac9f435158ffc5b9f0d39d7bf-c8a8af51b498aaf1-00"}
