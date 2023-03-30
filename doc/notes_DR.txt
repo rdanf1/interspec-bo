@@ -1,0 +1,38 @@
+# DR - 30/03/2023
+# Notes for codespace ( opened in browser of course ! )
+
+# After enabling the python env :
+$ source ../venv3.10.4/bin/activate
+
+# Lauching the project :
+$ python -m manage.py runserver 127.0.0.1:8200
+
+# IT WORKS !!! ( opened port on browser - native = same as codespace start - )
+# the link gh codespace gives to it (did you see the space rocket !!!)
+https://rdanf1-psychic-memory-6xwqjv7wwq5h9rg-8200.preview.app.github.dev/
+
+# other wise, with ssh X forwarded and good chrome package installed :
+# Cf : ../tmp/google-chrome-stable_current_amd64.deb
+$ google-chrome http://127.0.0.1:8200   ===> WORKS tambien ! LOL
+
+# Config du debug / vscode de codespace
+# I missed a point (after initiating my venv in ../venv.10.4)
+# ISSUE : didn't configure my interpretor (dunno how to do this...)
+
+# Python module use this default path :
+/home/codespace/.python/current
+
+# renamed
+/home/codespace/.python/current_MS_shit
+# hard linked my venv on it:
+ln -s /workspaces/venv3.10.4 /home/codespace/.python/current
+# => issue python program is linked on current...
+# del link and copy python from current:
+rm venv3.10.4/bin/python
+p /home/codespace/.python/current_MS_shit/bin/python venv3.10.4/bin/python
+
+# if you ddn't understand above verbose
+# don't worry : I didn't either...
+# THOUGH : IT WORKS IN DEBUG MODE !!!
+# NB : json file is obscure : 
+#      cant figure it out for modifying so called ${file}...
