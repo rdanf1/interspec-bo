@@ -1,5 +1,6 @@
 # DR - Gonna put here XForward stuff - 
-#        required to use efficiently pgadmin4-webcolors
+#                      (enabled by default in /etc/ssh/sshd_config)
+#        required to use efficiently pgadmin4-webcolors (in a browser in cs)
 #
 # ADDITION TO REPOSITORIES OF UBUNTU - 18.04... 
 # "ET TOUT DEVIENT POSSIBLE... (DR)" ( ie installing : libgtk-3-dev, xfce4-terminal, etc... )
@@ -16,3 +17,10 @@ sudo apt-get install xserver-common
 sudo apt-get update
 sudo apt-get upgrade
 
+#
+# DR - NB : I WONT RE-INSTALL flutter and CO here (see flutter repo EPIC history...)
+#      KEEP THIS IN MIND : 
+#         1. I always open my codespace on Web Browser !!! FUN FUN FUN :D 
+#         2. I use github CLI from home ( ssh [-X] ) : $ gh codepace ssh
+#         3. IT WORKS !!!
+#
