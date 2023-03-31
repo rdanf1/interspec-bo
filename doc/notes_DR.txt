@@ -23,13 +23,13 @@ $ google-chrome http://127.0.0.1:8200   ===> WORKS tambien ! LOL
 /home/codespace/.python/current
 
 # renamed
-/home/codespace/.python/current_MS_shit
+/home/codespace/.python/current_
 # hard linked my venv on it:
 ln -s /workspaces/venv3.10.4 /home/codespace/.python/current
 # => issue python program is linked on current...
 # del link and copy python from current:
 rm venv3.10.4/bin/python
-p /home/codespace/.python/current_MS_shit/bin/python venv3.10.4/bin/python
+cp /home/codespace/.python/current_/bin/python venv3.10.4/bin/python
 
 # if you ddn't understand above verbose
 # don't worry : I didn't either...
@@ -58,7 +58,7 @@ reference pgadmin4 on ubuntu : https://www.howtoforge.com/how-to-install-pgadmin
 in brief :
 
 $ sudo apt-get install postgresql
-$ sudo apt-get install postgresql-12-python3-multicorn  # utility ?!..
+## non... $ sudo apt-get install postgresql-12-python3-multicorn  # utility ?!..
 
 $ sudo service --status-all
 $ sudo service postgresql start
@@ -82,11 +82,23 @@ sudo /usr/pgadmin4/bin/setup-web.sh
 $ cd /etc/apache2/conf-enabled/
 $ cat pgadmin4.conf
 
+sudo service apache2 start
+sudo service postgresql start
+
 # =>>>> le + dur est fait... ensuite 
 1. ajouter port 80
 2. Lancer le web du port 80 et 
-3. sur l'invite pache2 placer la route /pgadmin4
+3. sur l'invite apache2 placer la route /pgadmin4
+
+NB : pas de browser.. 
+(faut utiliser google-chrome en XForward ssh :
+ $ google-chrome http://127.0.0.1/pgadmin4 )
 
 OUF.... FINI !
 
+Cf creation user & db avec pgadmin4 / postgresql
+lien d'install : https://www.howtoforge.com/how-to-install-pgadmin-5-postgresql-ui-on-debian-11/
+
+# Creation de l'app "backoffice"
+$ python manage.py startapp backoffice
 
