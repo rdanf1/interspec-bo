@@ -1,0 +1,20 @@
+# DR - This reduced python venv was created
+#      and subsituted to current of cs '(used for debugging...)
+# this way :
+
+# Creation
+python -m venv ../venv3.10.4
+
+# Substitution
+mv ~/.python/current ~/.python/stable_current_ 
+# remove link of python bin to current (may break new versions)..
+cp ~/.python/current/bin/python /workspaces/venv3.10.4/bin
+ln -s /workspaces/venv3.10.4  ~/.python/current
+# Now vscode debug with Python extention & "Python django" json works
+# ( launch the rocket )
+
+asgiref==3.6.0
+Django==4.1.7           # THE Python framework
+django-environ==0.10.0  # externalize cnx VARS of settings.py 
+psycopg2==2.9.5         # connexion driver (postgresql)
+sqlparse==0.4.3         # This one is my guess (DR) : useful ?

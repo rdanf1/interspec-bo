@@ -1,0 +1,18 @@
+# DR - Gonna put here XForward stuff - 
+#        required to use efficiently pgadmin4-webcolors
+#
+# ADDITION TO REPOSITORIES OF UBUNTU - 18.04... 
+# "ET TOUT DEVIENT POSSIBLE... (DR)" ( ie installing : libgtk-3-dev, xfce4-terminal, etc... )
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted"
+
+# google-chrome browser
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+# la cle du XForwarding reussi !!!
+sudo apt-get install xserver-common
+
+# ubuntu updates
+sudo apt-get update
+sudo apt-get upgrade
+
