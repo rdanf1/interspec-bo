@@ -133,3 +133,7 @@ $ python manage.py migrate
 
 CA marche dans les 2 sens django !!!
       <->
+
+New branch for exploration of tutorials on
+https://docs.djangoproject.com/
+
