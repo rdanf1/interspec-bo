@@ -1,0 +1,30 @@
+From : https://stackoverflow.com/questions/6358030/how-to-reset-django-admin-password
+
+Created super user :
+@rdanf1 ➜ /workspaces/interspec-bo (tutos-django) 
+
+$ python manage.py createsuperuser
+
+Username (leave blank to use 'codespace'): rdanf1
+Email address: reylet.daniel@gmail.com
+Password: 
+Password (again): 
+Superuser created successfully.
+
+
+as a result in python console "$ python manage.py shell"
+listing of superusers :
+(venv3.10.4) @rdanf1 ➜ /workspaces/interspec-bo (tutos-django) 
+
+$ python manage.py shell
+
+Python 3.10.4 (main, Mar 13 2023, 19:44:25) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from django.contrib.auth.models import User
+>>> User.objects.filter(is_superuser=True)
+<QuerySet []>
+>>> from django.contrib.auth.models import User
+>>> User.objects.filter(is_superuser=True)
+<QuerySet [<User: rdanf1>]>
+>>> 
