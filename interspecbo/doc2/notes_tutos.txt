@@ -99,3 +99,9 @@ Referenced by:
     TABLE "polls_choice" CONSTRAINT "polls_choice_question_id_c5b4b260_fk_polls_question_id" 
     FOREIGN KEY (question_id) REFERENCES polls_question(id) 
     DEFERRABLE INITIALLY DEFERRED
+
+db-interbo=# select * from backoffice_book;
+ id | title 
+----+-------
+(0 rows)
+
