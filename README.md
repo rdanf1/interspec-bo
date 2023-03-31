@@ -44,7 +44,7 @@ codespace speaking : I MEAN OPENED IN BROWSER CODESPACE
 
 ![backoffice_book_model end live 3](doc/img/bo/backoffice_book_model_2023-03-31_06.56.22.png)
 
-<h3>My version of the book table - writen with pdadmin4 : BAD</h3>
+<h3>My version of the book table - writen with pgadmin4 : BAD</h3>
 <h4>TODO : rewrite with model in models.py of backoffice app</h4>
 
 ![My_book_table_pgadmin4](doc/img/bo/1st_table_pgadmin4_2023-03-31_05.25.57.png)
