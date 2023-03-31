@@ -103,5 +103,5 @@ Referenced by:
 db-interbo=# select * from backoffice_book;
  id | title 
 ----+-------
-(0 rows)
+(0 rows) 
 
