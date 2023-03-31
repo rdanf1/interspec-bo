@@ -1,3 +1,6 @@
+# DR - Never mind : Many are already installed !!! 
+#                   in fresh created codespace from repo 
+
 Listing...
 adduser/focal,now 3.118ubuntu2 all [installed]
 adwaita-icon-theme/focal-updates,now 3.36.1-2ubuntu0.20.04.2 all [installed,automatic]
