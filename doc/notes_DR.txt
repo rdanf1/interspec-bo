@@ -102,3 +102,34 @@ lien d'install : https://www.howtoforge.com/how-to-install-pgadmin-5-postgresql-
 # Creation de l'app "backoffice"
 $ python manage.py startapp backoffice
 
+# Installation des modules python
+pip install psycopg2        # ===> driver cx postgresql
+pip install django-environ  # ===> variables externalized in .env file
+
+# modifs interspecbo
+- settings.py : 
+ 
+  I) INSTALLED_APP ajout de 'backoffice'
+ 
+ II) DATABASES default (variables de connexion)
+   a) en clair 
+   b) avec environ ( module python ) - Variables dans .env
+
+Fichier .env avec les valeurs "en clair" de connexion,
+rien de visible dans le fichier source.
+
+# Préparation de la migration
+$ python manage.py makemigrations     # > pas de changement = ok params
+# Migration (les tables postgre - auth... - sont creees)
+$ python manage.py migrate 
+
+# Create a model (in models.py of application backoffice)
+
+# re-migration (test et mgration)
+$ python manage.py makemigrations    # => detecte la table ds models.py
+
+# La table modelisee est migre en bdd
+$ python manage.py migrate 
+
+CA marche dans les 2 sens django !!!
+      <->
