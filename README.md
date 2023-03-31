@@ -39,3 +39,16 @@ One directory too high for the repo ?!..
 codespace speaking : I MEAN OPENED IN BROWSER CODESPACE
 </h3>
                      ***** THAT'S REAL FUN (LYNY) *****
+
+<h3>Live 3 : backoffice app bookmodel ok</h3>
+
+![backoffice_book_model end live 3](doc/img/bo/backoffice_book_model_2023-03-31_06.56.22.png)
+
+<h3>My version of the book table - writen with pdadmin4 : BAD</h3>
+<h2>TODO : rewrite with model in models.py of backoffice app</h2>
+
+![My_book_table_pgadmin4](doc/img/bo/1st_table_pgadmin4_2023-03-31_05.25.57.png)
+
+<code>
+NB: I have 70 hours remaining for codespace 'til 1 of April !!! (using 4 cores 8M ram actually )
+</code>
