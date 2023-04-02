@@ -1,0 +1,46 @@
+!!! fedora !!!
+sudo dnf install postgresql-server
+
+sudo /usr/bin/postgresql-setup --initdb
+* Initializing database in '/var/lib/pgsql/data'
+* Initialized, logs are in /var/lib/pgsql/initdb_postgresql.log
+
+sudo vi /var/lib/pgsql/data/postgresql.conf   # BIG (useless) CONFIG
+
+sudo vi /etc/postgresql/9.5/main/pg_hba.conf  # <<<<< replace "ident" with "md5"  ( idem pam qui marche )
+sudo -u postgres psql
+ALTER USER postgres WITH PASSWORD 'xxxxxxxxxxxxxxxxxxxxx';
+
+=> install & setup pgadmin4
+
+sudo dnf install pgadmin4
+
+sudo vi /usr/lib/pgadmin4/pgadmin/setup/data_directory.py  # <<<=== Ajouter l' #  import sys   # Un oubli dev !
+sudo python3  /usr/lib/pgadmin4/setup.py                   # intialise pgadmin4 ok + coord connexion & adr mail...
+
+sudo pip install simple-web-socket  # Config supp pgdmin4... Existe en pkg dnf ?!..
+
+sudo python3 /usr/lib/pgadmin4/pgAdmin4.py                 # Lance pgadmin4 ( cf http://127.0.0.1:5050 )
+
+register server ( postgresql en connexion 127.0.0.1, ... )
+creer role superuser : rdanf0 Cf ci-dessus
+
+sudo -u postgres psql
+ALTER USER rdanf0 WITH PASSWORD 'xxxxxxxxxxxxxxxxx';
+
+test connexion :
+psql -U rdanf0 -d postgres -h 127.0.0.1
+# CREATE DATABASE dbinterbo                # create db without launching gaz enterprise "pgadmin4"
+# \l                                       # petit L : List all databases
+# \c <database>                            # connect to database
+# \d                                       # list tables view sequences
+
+OK !!!
+
+ANNEXE :
+1.
+Pb of connexion encontered/solved on fed37 :
+https://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-failed-for-user-postgres
+2. pg assets 
+https://dba.stackexchange.com/questions/1285/how-do-i-list-all-databases-and-tables-using-psql
+
