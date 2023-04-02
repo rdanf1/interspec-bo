@@ -105,3 +105,12 @@ db-interbo=# select * from backoffice_book;
 ----+-------
 (0 rows) 
 
+From "Pycharm 2023.1 RC2" -> "run" output :)
+LOGS from 127.0.0.1:8000 "runserver" on tuto03 ( routes )
+Not Found: /polls/results/34/
+[02/Apr/2023 14:40:34] "GET /polls/results/34/ HTTP/1.1" 404 2888
+[02/Apr/2023 14:40:46] "GET /polls/34/ HTTP/1.1" 200 30
+[02/Apr/2023 14:41:28] "GET /polls/34/results HTTP/1.1" 301 0
+[02/Apr/2023 14:41:28] "GET /polls/34/results/ HTTP/1.1" 200 45
+[02/Apr/2023 14:42:33] "GET /polls/34/vote/ HTTP/1.1" 200 29
+
