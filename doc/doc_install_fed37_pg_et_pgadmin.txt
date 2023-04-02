@@ -37,3 +37,10 @@ psql -U rdanf0 -d postgres -h 127.0.0.1
 
 OK !!!
 
+ANNEXE :
+1.
+Pb of connexion encontered/solved on fed37 :
+https://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-failed-for-user-postgres
+2. pg assets 
+https://dba.stackexchange.com/questions/1285/how-do-i-list-all-databases-and-tables-using-psql
+
