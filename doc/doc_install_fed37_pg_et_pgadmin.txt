@@ -44,3 +44,10 @@ https://stackoverflow.com/questions/2942485/psql-fatal-ident-authentication-fail
 2. pg assets 
 https://dba.stackexchange.com/questions/1285/how-do-i-list-all-databases-and-tables-using-psql
 
+Using pgadmin4 on fedora 37 ( NB my PS1=': ' ):
+: sudo python /usr/lib/pgadmin4/pgAdmin4.py
+Starting pgAdmin 4. Please navigate to http://127.0.0.1:5050 in your browser.
+ * Serving Flask app 'pgadmin'
+ * Debug mode: off
+
+ { DR - And YES pgadmin is a Flask app HERE !!! }
