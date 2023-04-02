@@ -114,3 +114,12 @@ Not Found: /polls/results/34/
 [02/Apr/2023 14:41:28] "GET /polls/34/results/ HTTP/1.1" 200 45
 [02/Apr/2023 14:42:33] "GET /polls/34/vote/ HTTP/1.1" 200 29
 
+It worked include fixed ! tuto03 - Write views that actually do something :
+
+Watching for file changes with StatReloader
+System check identified no issues (0 silenced).
+April 02, 2023 - 16:11:58
+Django version 4.1.7, using settings 'interspecbo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Apr/2023 16:12:29] "GET /polls/ HTTP/1.1" 200 51
