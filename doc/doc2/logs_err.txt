@@ -1,8 +1,8 @@
 # tuto03 - "Write views that actually do something" - oops !!!
 # Humm, there's no datas in the poll_question table...
 #       I did previous python's interpretor adds on other BDD (codespace's Alpine tuned version...)
-#       or it's a date issue  ?!..
-#
+#       or it's a date issue  ?!.. => import issue !!!  (if table is empty no errors : blank page = white empty backround )
+#       tested debug run => ok ( i lov pycharm )
 NameError at /polls/
 name 'Question' is not defined
 Request Method:	GET
