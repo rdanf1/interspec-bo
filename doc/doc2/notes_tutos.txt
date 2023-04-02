@@ -123,3 +123,18 @@ Django version 4.1.7, using settings 'interspecbo.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 [02/Apr/2023 16:12:29] "GET /polls/ HTTP/1.1" 200 51
+
+THIS DONT WORK (no reference assignation ) :
+c = q.choice_set.filter(choice_text__startswith='Just hacking')
+c.delete()
+<bound method QuerySet.delete of <QuerySet [<Choice: Just hacking again>]>>
+q.save()
+
+DELETE - 3rd enr
+>>> q.choice_set.filter(choice_text__startswith='Just hacking').delete()
+(1, {'polls.Choice': 1})
+OK !!! deleted :
+>>> q.choice_set.all()
+<QuerySet [<Choice: Not much>, <Choice: The sky>]>
+
+

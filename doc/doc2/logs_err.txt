@@ -1,3 +1,19 @@
+# Cf tuto #3 : "Raising a 404 error" =>
+Page not found (404)
+Question does not exist
+Request Method:	GET
+Request URL:	http://127.0.0.1:8000/polls/202/
+Raised by:	polls.views.detail
+Using the URLconf defined in interspecbo.urls, Django tried these URL patterns, in this order:
+
+polls/ [name='index']
+polls/ <int:question_id>/ [name='detail']
+The current path, polls/202/, matched the last one.
+
+You’re seeing this error because you have DEBUG = True in your Django settings file. Change that to False, and Django will display a standard 404 page.
+
+/************************ NEXT ************************************/
+
 # tuto03 - "Write views that actually do something" - oops !!!
 # Humm, there's no datas in the poll_question table...
 #       I did previous python's interpretor adds on other BDD (codespace's Alpine tuned version...)
