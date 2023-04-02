@@ -1,3 +1,4 @@
+NB : There are 7 parts in django v4.1 beginner tutorial ! (didn't make half of it !)
 From : https://stackoverflow.com/questions/6358030/how-to-reset-django-admin-password
 
 Created super user :
